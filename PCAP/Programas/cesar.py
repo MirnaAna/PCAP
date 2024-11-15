@@ -6,8 +6,8 @@ for char in text:
         continue
     char = char.upper()   #m --> M
     code = ord(char) + 1  # punto de codigo siguiente
-    if code > ord('Z'):
-        code = ord('A')
+    if code > ord('Z'):   #si rebesa el alfabeto..
+        code = ord('A')   #...empieza otra vez
     cipher += chr(code)
 
 print(cipher)
